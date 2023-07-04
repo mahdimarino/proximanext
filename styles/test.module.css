@@ -1,0 +1,15 @@
+.z {}
+
+.a,
+.c {
+    height: 1000px;
+}
+
+.b {
+    background-color: red;
+    transform: all 10s;
+}
+
+.k {
+    background-color: blue;
+}

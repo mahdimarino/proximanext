@@ -1,0 +1,74 @@
+.mainaroposblock {
+    background-image: url(https://mahdismahi.com/webs/roxima-algerie/workss.png);
+    background-size: 100%;
+}
+
+.titlesquare {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    /* Set the desired color */
+    margin-right: 10px;
+    /* Adjust the spacing as needed */
+}
+
+.normal {
+    opacity: 0;
+    transform: translateX(-15rem);
+    transition: all 1s ease-in-out;
+}
+
+.facing {
+
+    transform: translateX(0);
+
+    transition: all 1s ease-in-out;
+}
+
+.part2div {
+    opacity: 0;
+    transform: translateX(-10rem);
+    /* transform: scale(0.3); */
+    transition: all 1s ease-in-out;
+
+}
+
+.hovertext {
+
+
+    transition: all 1s ease-in-out;
+
+}
+
+.hovertext:hover {
+    transform: scale(1.1);
+
+}
+
+.active {
+    opacity: 1;
+    /* transform: scale(1); */
+    transform: translateX(0);
+}
+
+
+@media only screen and (max-width: 800px) {
+    .mainaroposblock {
+        background-image: none;
+        background-color: black !important;
+    }
+
+    .part2div {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all 1s ease-in-out;
+    }
+
+    .active {
+
+        transform: translateX(0);
+
+        transition: all 1s ease-in-out;
+    }
+}

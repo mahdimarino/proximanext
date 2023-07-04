@@ -1,0 +1,13 @@
+.mainblock {
+    height: 100vh;
+    background-image: url(https://mahdismahi.com/webs/roxima-algerie/background.png);
+    background-size: 100%;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .mainblock {
+        background-image: url(https://mahdismahi.com/webs/roxima-algerie/background.png);
+        background-size: 300%;
+    }
+}
