@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Row, Col, Modal } from 'react-bootstrap';
 import styles from '../../styles/Apropos.module.css';
 
@@ -8,6 +8,8 @@ const CategoryPage = ({ categoryData }) => {
     const { category } = router.query;
     // const [categoryData, setCategoryData] = useState([]);
     const [selectedImage, setSelectedImage] = useState(null);
+
+
 
     useEffect(() => {
         // const fetchData = async () => {
@@ -45,12 +47,13 @@ const CategoryPage = ({ categoryData }) => {
             {categoryData && categoryData.map((item) => (
                 <Col xl={5} xs={12} key={item.post_id} className='text-center m-3'>
                     <img
+                        className={`${styles.img_data}`}
                         style={{ width: '100%', cursor: 'pointer' }}
-                        src={'https://mahdismahi.com/webs/roxima-algerie/image/pic13.png'}
-                        onClick={() => handleImageClick('https://mahdismahi.com/webs/roxima-algerie/image/pic13.png')}
+                        src={`https://mahdismahi.com/webs/proxima_API/uploads/${item.file_name}`}
+                        onClick={() => handleImageClick(`https://mahdismahi.com/webs/proxima_API/uploads/${item.file_name}`)}
                         alt={item.post_title}
                     />
-                    <h3 className='text-light m-2'>{item.post_title}</h3>
+
                 </Col>
             ))}
 
@@ -66,7 +69,11 @@ const CategoryPage = ({ categoryData }) => {
 export default CategoryPage;
 
 export const getServerSideProps = async ({ query }) => {
-    const response = await fetch(`http://localhost/todolist-api/proximacategory.php?post_category=${query.category}`)
+    const response = await fetch(`https://mahdismahi.com/webs/proxima_API/getcatData.php?post_category=${query.category}`)
     const categoryData = await response.json();
-    return { props: { categoryData } }
+
+
+    const reversedData = categoryData.reverse();
+
+    return { props: { categoryData: reversedData } }
 }

@@ -13,6 +13,14 @@
     /* Adjust the spacing as needed */
 }
 
+.img_data {
+    transition: all 1s ease-in-out;
+}
+
+.img_data:hover {
+    transform: scale(1.1);
+}
+
 .normal {
     opacity: 0;
     transform: translateX(-15rem);

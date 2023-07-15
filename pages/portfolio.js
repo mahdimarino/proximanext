@@ -9,11 +9,11 @@ const Portfolio = () => {
     return (
         <Row id="portfolio" style={{ backgroundColor: 'black' }}>
             <Col className={` ${styles.prtfl11}`} xl={4} xs={12}>
-                <Link href="/posts/[category]" as="/posts/web">
+                <Link href="/posts/[category]" as="/posts/DESIGN GRAFIC">
                     <div className={styles.image}>
                         <img className={`${styles.image__img}  ${styles.img22}`} src="https://mahdismahi.com/webs/roxima-algerie/po11.png" alt="Bricks" />
                         <div className={`${styles.image__overlay}  ${styles.image__overlayprimary}`}>
-                            <div className={styles.image__title}>web</div>
+                            <div className={styles.image__title}>DESIGN GRAFIC</div>
                             <p className={styles.image__description}>
 
                             </p>
@@ -22,11 +22,11 @@ const Portfolio = () => {
                 </Link>
             </Col>
             <Col className={` ${styles.prtfl11}`} xl={4} xs={12}>
-                <Link href="/posts/[category]" as="/posts/dev">
+                <Link href="/posts/videocategory" as="/posts/videocategory">
                     <div className={styles.image}>
                         <img className={`${styles.image__img}  ${styles.img22}`} src="https://mahdismahi.com/webs/roxima-algerie/po33.png" alt="Bricks" />
                         <div className={`${styles.image__overlay}  ${styles.image__overlayprimary}`}>
-                            <div className={styles.image__title}>dev</div>
+                            <div className={styles.image__title}>VIDEOGRAPHIE</div>
                             <p className={styles.image__description}>
 
                             </p>
@@ -34,11 +34,11 @@ const Portfolio = () => {
                     </div>
                 </Link>
             </Col><Col className={` ${styles.prtfl11}`} xl={4} xs={12}>
-                <Link href="/posts/[category]" as="/posts/video">
+                <Link href="/posts/[category]" as="/posts/PHOTOGRAPHIE">
                     <div className={styles.image}>
                         <img className={`${styles.image__img}  ${styles.img22}`} src="https://mahdismahi.com/webs/roxima-algerie/po22.jpg" alt="Bricks" />
                         <div className={`${styles.image__overlay}  ${styles.image__overlayprimary}`}>
-                            <div className={styles.image__title}>video</div>
+                            <div className={styles.image__title}>PHOTOGRAPHIE</div>
                             <p className={styles.image__description}>
 
                             </p>
