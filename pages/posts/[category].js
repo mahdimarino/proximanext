@@ -5,6 +5,9 @@ import styles from '../../styles/Apropos.module.css';
 
 const CategoryPage = ({ categoryData }) => {
     const router = useRouter();
+    if (!router.isFallback && !categoryData && !category) {
+        return
+    }
     const { category } = router.query;
     // const [categoryData, setCategoryData] = useState([]);
     const [selectedImage, setSelectedImage] = useState(null);

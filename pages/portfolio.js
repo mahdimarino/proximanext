@@ -1,5 +1,5 @@
 import React from 'react'
-import Posts from './posts'
+
 import { Col, Row } from 'react-bootstrap'
 import Link from 'next/link'
 import styles from '../styles/Portfolio.module.css'

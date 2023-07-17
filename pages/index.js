@@ -7,7 +7,7 @@ import Nosservices from './nosservices'
 import Portfolio from './portfolio'
 import Contact from './contact'
 import { Navbar } from 'react-bootstrap'
-import Posts from './posts'
+
 import Test from './test'
 
 
