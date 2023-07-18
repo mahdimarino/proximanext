@@ -38,8 +38,8 @@ const CategoryPage = ({ categoryData }) => {
     };
 
     return (
-        <Row style={{ backgroundColor: 'black' }} className='p-5 m-5 d-flex justify-content-center'>
-            <div className='text-center m-5'>
+        <Row style={{ backgroundColor: 'black' }} className='p-xl-5 p-md-1 m-1 d-flex justify-content-center'>
+            <div style={{ marginTop: "7rem" }} className='text-center m-xl-5 m-md-1'>
                 <h1 className={`text-light`}>
                     <span className={styles.titlesquare}></span>
                     {category} PORTFOLIO

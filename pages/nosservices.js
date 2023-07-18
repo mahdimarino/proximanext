@@ -22,8 +22,8 @@ const Nosservices = () => {
 
     return (
         <Row style={{ backgroundColor: 'black', margin: 'auto' }} className='p-5 text-light d-flex justify-content-center' id='nosservices'>
-            <Col className=' p-5 ' xl={5} xs={12}>
-                <div style={{ border: '5px solid blue' }} className=' my-xs-5' className={` ${styles.serviceblock1} ${isScreenFacing ? styles.active1 : styles.serviceblock1}`} >
+            <Col className='p-xl-5 p-md-1 mt-2  ' xl={5} xs={12}>
+                <div style={{ border: '5px solid blue' }} className={`' my-xs-5' ${styles.serviceblock1} ${isScreenFacing ? styles.active1 : styles.serviceblock1}`} >
                     <ul>
                         <div style={{ width: '80%', textAlign: 'center', position: 'relative', transform: 'translateY(-30px)' }}><h1 style={{ backgroundColor: 'black' }}>SITE INTERNET</h1></div>
                         <li>Landing page</li>
@@ -34,8 +34,8 @@ const Nosservices = () => {
                     </ul>
                 </div>
             </Col>
-            <Col className=' p-5 ' xl={5} xs={12}>
-                <div style={{ border: '5px solid blue' }} className=' my-xs-5' className={` ${styles.serviceblock1} ${isScreenFacing ? styles.active1 : styles.serviceblock1}`} >
+            <Col className='p-xl-5 p-md-1  mt-4 ' xl={5} xs={12}>
+                <div style={{ border: '5px solid blue' }} className={`' my-xs-5' ${styles.serviceblock1} ${isScreenFacing ? styles.active1 : styles.serviceblock1}`} >
                     <ul>
                         <div style={{ textAlign: 'center', position: 'relative', transform: 'translateY(-30px)' }}><h1 style={{ backgroundColor: 'black' }}>DESIGN GRAPHIQUE</h1></div>
                         <li>Identité de marque</li>
@@ -46,8 +46,8 @@ const Nosservices = () => {
                     </ul>
                 </div>
             </Col>
-            <Col className=' p-5 ' xl={5} xs={12}>
-                <div style={{ border: '5px solid blue' }} className=' my-xs-5' className={` ${styles.serviceblock1} ${isScreenFacing ? styles.active1 : styles.serviceblock1}`} >
+            <Col className='p-xl-5 p-md-1  mt-4 ' xl={5} xs={12}>
+                <div style={{ border: '5px solid blue' }} className={`' my-xs-5' ${styles.serviceblock1} ${isScreenFacing ? styles.active1 : styles.serviceblock1}`} >
                     <ul>
                         <div style={{ width: '80%', textAlign: 'center', position: 'relative', transform: 'translateY(-30px)' }}><h1 style={{ backgroundColor: 'black' }}>PHOTOGRAPHIE & VIDEO</h1></div>
                         <li>Prise de vue</li>
@@ -58,8 +58,8 @@ const Nosservices = () => {
                     </ul>
                 </div>
             </Col>
-            <Col className=' p-5 ' xl={5} xs={12}>
-                <div style={{ border: '5px solid blue' }} className=' my-xs-5' className={` ${styles.serviceblock1} ${isScreenFacing ? styles.active1 : styles.serviceblock1}`} >
+            <Col className='p-xl-5 p-md-1  mt-4 ' xl={5} xs={12}>
+                <div style={{ border: '5px solid blue' }} className={`' my-xs-5' ${styles.serviceblock1} ${isScreenFacing ? styles.active1 : styles.serviceblock1}`} >
                     <ul>
                         <div style={{ width: '80%', textAlign: 'center', position: 'relative', transform: 'translateY(-30px)' }}><h1 style={{ backgroundColor: 'black' }}>DÉVELOPPEMENT DIGITAL</h1></div>
                         <li>Stratégie social media</li>
@@ -73,7 +73,7 @@ const Nosservices = () => {
 
 
 
-        </Row>
+        </Row >
     )
 }
 
